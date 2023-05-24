@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cv-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-areas:
+      "head head"
+      "content  skills"
+      "content  skills";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+.sub-heading {
+    color: #2079c7;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid pink;
+    grid-area: head;
+    background-color: #8ca0ff;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#content {
+    border: 3px solid orange;
+    grid-area: main;
+  background-color: #ffff64;
+}
+
+#skills {
+    border: 3px solid blue;
+    grid-area: skills;
+    background-color: #ffa08c;
+}

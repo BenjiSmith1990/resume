@@ -10,88 +10,93 @@
 <body>
     <main id="cv-wrapper">
         <!-- Header section -->
-    <header id="header">
-        <section>
-            <h1>Ben Smith</h1>
-            <p>Junior Sorftware Developer</p>
-        </section>
-        <section>
-            <p>Portsmouth, UK</p>
-            <p>07532 714 165</p>
-            <p><a href="mailto:Benmwsmith@gmail.com">Benmwsmith@gmail.com</a></p>
-        </section>
-    </header>
-    <!-- Skills and socials -->
-    <div id="content-wrapper">
-    <aside id="skills">
-    <nav>
-        <h2 class="sub-heading">Social Links</h2>
-        <ul>
-            <li><a href="https://bit.ly/3ptWMKu">Visit My Github</a></li>
-            <li><a href="https://bit.ly/3O2mkc0">Visit My LinkedIn</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2 class="sub-heading">Technical Skills</h2>
-        <h3>Backtend:</h3>
-        <ul>
-            <li>Javascript</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>Cloud Hosting</li>
-            <li>SQL (Postgres)</li>
-        </ul>
-            <h3>Frontend:</h3>
-            <ul>
-                <li>Javascript</li>
-                <li>React.js</li>
-                <li>Semantic HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-            </ul>
-            <h3>Testing:</h3>
-            <ul>
-                <li>Jest</li>
-                <li>Supertest</li>
-            </ul>
-    </section>
-    <section>
-        <h2 class="sub-heading">Soft Skills</h2>
-        <ul>
-            <li>Communication</li>
-            <li>Organisation</li>
-            <li>Analytical</li>
-            <li>Creative</li>
-            <li>Perseverance</li>
-            <li>Problem Solving</li>
-            <li>Resourcefulness</li>
-            <li>Curiosity</li>
-            <li>Adaptability</li>
-            <li>Teamwork</li>
-            <li>Leadership</li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="sub-heading">Hobbies</h2>
-        <ul>
-            <li>Reading</li>
-            <li>Learning</li>
-            <li>Youtube Tutorials</li>
-            <li>Self Development</li>
-            <li>Meetups</li>
-            <li>Adventure</li>
-            <li>Motorbikes</li>
-            <li>DIY</li>
-        </ul>
-    </section>
-    <section>
-        <h2 class="sub-heading">Languages</h2>
-        <ul>
-            <li>English</li>
-            <li>Welsh</li>
-        </ul>
-    </section>
+        <div id="sidebar">
+            <header id="header">
+                <section>
+                    <h1>Ben Smith</h1>
+                    <p>Junior Sorftware Developer</p>
+                </section>
+                <section>
+                    <p>Portsmouth, UK</p>
+                    <p>07532 714 165</p>
+                    <p id="email-link"><a href="mailto:Benmwsmith@gmail.com">Benmwsmith@gmail.com</a></p>
+                </section>
+            </header>
+            <!-- Skills and socials -->
+            <div id="content-wrapper">
+            <aside id="skills">
+            <nav>
+                <h2 class="sub-heading">Social Links</h2>
+                <ul>
+                    <li class="skills--link"><a href="https://bit.ly/3ptWMKu" target="_blank">Visit My Github</a></li>
+                    <li class="skills--link" target="_blank"><a href="https://bit.ly/3O2mkc0">Visit My LinkedIn</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2 class="sub-heading">Technical Skills</h2>
+                <h3>Backtend:</h3>
+                <ul>
+                    <li>Javascript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>Cloud Hosting</li>
+                    <li>SQL (Postgres)</li>
+                </ul>
+                    <h3>Frontend:</h3>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>React.js</li>
+                        <li>Semantic HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <h3>Testing:</h3>
+                    <ul>
+                        <li>Jest</li>
+                        <li>Supertest</li>
+                    </ul>
+            </section>
+            <section>
+                <h2 class="sub-heading">Soft Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Organisation</li>
+                    <li>Analytical</li>
+                    <li>Creative</li>
+                    <li>Perseverance</li>
+                    <li>Problem Solving</li>
+                    <li>Resourcefulness</li>
+                    <li>Curiosity</li>
+                    <li>Adaptability</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="sub-heading">Hobbies</h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Learning</li>
+                    <li>Youtube Tutorials</li>
+                    <li>Self Development</li>
+                    <li>Meetups</li>
+                    <li>Adventure</li>
+                    <li>Motorbikes</li>
+                    <li>DIY</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="sub-heading">Languages</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Welsh</li>
+                </ul>
+            </section>
         </aside>
+        </div>
+        </div>
+
+    <div>
         <article id="content">
             <!-- Profile section -->
             <section>
@@ -101,7 +106,7 @@
             <!-- Experience section -->
             <section>
                 <h2 class="sub-heading">Experience</h2>
-                <p><span>Northcoders</span> - Junior Web Developer</p>
+                <h3><span class="jobs">Northcoders</span> - Junior Web Developer</h3>
                 <p>Mar '23 - Jun '23</p>
                 <ul>
                     <li><p>Working with Javascript as the main language, from frontend to backend with React.js and Node.js respectively.</p></li>
@@ -112,7 +117,7 @@
                     <li><p>Worked with the Agile approach to project management.</p></li>
                 </ul>
                 <h2 class="sub-heading">Projects</h2>
-                <p><span>Ben-NC-Games</span> - mini games board</p>
+                <h3><span class="jobs">Ben-NC-Games</span> - mini games board</h3>
                 <p><a href="https://bit.ly/41wBNnS">Visit Ben-NC-Games Website</a></p>
                 <p><a href="https://bit.ly/3I9Jtpc">Visit Ben-NC-Games Github Repository</a></p>
                 <ul>
@@ -126,7 +131,7 @@
                     <li><p>React.js for creating a UI/UX focused frontend.</p></li>
                 </ul>
                 <!-- Update this when Group Project is complete -->
-                <p><span>Group Project</span> - TBD</p>
+                <h3><span class="jobs">Group Project</span> - TBD</h3>
                 <p><a href="#">Visit Group-Project Website</a></p>
                 <p><a href="#">Visit Group-Project Github Repository</a></p>
                 <ul>
@@ -139,13 +144,13 @@
                     <li><p>Lorem ipsum dolor sit.</p></li>
                     <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam minima perspiciatis atque.</p></li>
                 </ul>
-                <p><span>Travel Year</span> - Self Development</p>
+                <h3><span class="jobs">Travel Year</span> - Self Development</h3>
                 <p>Jan '22 - Mar '23</p>
                 <ul>
                     <li><p>Year out to refocuse, lose weight and career pivot</p></li>
                     <li><p>Took a Udemy course before finding Northcoders</p></li>
                 </ul>
-                <p><span>CollectMyWheels.com</span> - Operations Manager</p>
+                <h3><span class="jobs">CollectMyWheels.com</span> - Operations Manager</h3>
                 <p>Sept '09 - Jan '22</p>
                 <ul>
                     <li><p>Oversaw the development of apprentices via an immersive, hands on training plan that I devised.</p></li>
@@ -159,16 +164,17 @@
             </section>
             <section>
                 <h2 class="sub-heading">Education</h2>
-                <p><span>XR Training</span>, <em>Bridgend</em> - 
-                NVQ Level 3</p>
+                <h3><span class="jobs">XR Training</span>, <em>Bridgend</em> - 
+                NVQ Level 3</h3>
                 <p>Sept '09 - Jan '13</p>
                 <p>City & Guilds NVQ level 3 Qualification in light vehicle and maintenance</p>
-                <p><span>Ysgol Gyfun Llanhari</span>,<em>Llanharry</em> - GCSE</p>
+                <h3><span class="jobs">Ysgol Gyfun Llanhari</span>,<em>Llanharry</em> - GCSE</h3>
                 <p>Sept '01 - Jan '09</p>
                 <p>5 GSCEs (B-C) in History, Math, Science, English and Welsh </p>
             </section>
         </article>
     </div>
+        
     </main>
 </body>
 </html>

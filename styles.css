@@ -1,18 +1,33 @@
+html {
+    font-size: 62.5%;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #00325e;
+    text-decoration: none;
+    margin-left: 4rem;
+}
+
+a:hover {
+    color: #2079c7;
+}
+
 #cv-wrapper {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    grid-template-areas:
-      "head head"
-      "content  skills"
-      "content  skills";
-    grid-template-rows: 50px 1fr 30px;
-    grid-template-columns: 150px 1fr;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(242, 239, 239);
 }
 
 .sub-heading {
@@ -20,26 +35,77 @@
 }
 
 #header {
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid pink;
-    grid-area: head;
-    background-color: #8ca0ff;
+    background-color: #024077;
+    color: white;
+    padding: 5rem 2rem;
+    line-height: 3rem;
+}
+#header h1 {
+ font-size: 3.75rem;
+}
+#header p {
+ font-size: 1.8rem;
+}
+#skills {
+    background-color: #00325e;
+    color: white;
+    padding: 6rem;
+    line-height: 3rem;
 }
 
-#content-wrapper {
+#skills li {
+    margin-left: 3rem;
+    
+}
+
+#email-link a{
+    color:white;
+    margin-left: 0;
+}
+#email-link a:hover{
+    color:#2079c7
+}
+
+.skills--link {
+    list-style: none;
+}
+.skills--link a {
+    color: white;
+    text-decoration: none;
+    margin-left:-3rem;
+}
+.skills--link a:hover {
+    color: #2079c7;
+    text-decoration: none;
+    margin-left:-3rem;
+}
+
+#sidebar {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+}
+#skills h2 {
+    padding: 2rem 0;
+}
+nav h2 {
+    margin-top: -4rem;
 }
 
 #content {
-    border: 3px solid orange;
-    grid-area: main;
-  background-color: #ffff64;
+    margin-left: 3rem;
+    padding: 2rem ;
+    text-align: justify;
 }
 
-#skills {
-    border: 3px solid blue;
-    grid-area: skills;
-    background-color: #ffa08c;
+#content h2 {
+    padding: 2.4rem 0;
+}
+
+#content h3 {
+    color: #00325e;
+    padding: 1rem 0 ;
+}
+
+#content p {
+    line-height: 2rem;
 }

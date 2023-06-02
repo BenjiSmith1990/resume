@@ -1,1 +1,1 @@
-# resume
+This is a document that only looks good on Print!
